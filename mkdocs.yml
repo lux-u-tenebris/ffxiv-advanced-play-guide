@@ -1,0 +1,42 @@
+site_name: FFXIV Advanced Play Guide
+repo_url: https://github.com/lux-u-tenebris/ffxiv-advanced-play-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  search_index_only: true
+  custom_dir: theme
+  language: en
+  features:
+    - navigation.indexes
+    - navigation.instant
+  favicon: images/favicon.png
+  logo: images/logo.png
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.keys
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - git-revision-date-localized:
+      type: date
+  - glightbox
+  - redirects:
+      redirect_maps:
+  - search
+  - table-reader:
+      data_path: docs
+
+nav:
+  - Home: index.md
